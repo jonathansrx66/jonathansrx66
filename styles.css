@@ -1,0 +1,234 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.letras{
+    background: linear-gradient(
+        to right,
+        #044c04,
+        #32CD32,
+     #0038A8,
+       #c40d7e
+    );
+    background-position: 0;
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color: transparent;
+    animation: move 4s linear alternate infinite; 
+}
+
+img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1.5s;
+
+}
+img:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+.galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 22px;
+    align-items: center;
+    
+}
+
+.innova{
+    width: 100%;;
+    max-width: 650px;
+    height: 300px;
+    border-radius: 10px;
+}
+.UNO{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #a0c4ff; /* Azul pastel */
+
+    
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    
+    
+}
+
+header {
+    background-color: #0c0a3a;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+   
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #18997d;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 0;
+   
+  
+}
+
+.bg-light {
+    background-color: #fafafa;
+    background-image: url(https://es.fi-group.com/wp-content/uploads/sites/4/2023/04/444-scaled.jpg);
+    background-size:cover;
+    background-position: 100%;
+    Background-repeat: no-repeat;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333333; 
+
+}
+
+p {
+    text-align: justify;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+
+ul {
+  
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #0073e6;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 10px 0;
+}
+
+.service-card h3 {
+    color: #0073e6;
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    font-size: 1.2rem;
+    font-family: monospace;
+
+
+}
+.service-card ul {
+    font-size: 1.2rem;
+    font-family: monospace;
+
+}
+.pa{
+    color: white;
+}
+.pa h2{
+    color: #d8a7d1;
+
+    font-size: 1.5rem;
+
+}
+.pa p{
+    color: white;
+    font-size: 1.2rem;
+
+}
+.pa ol{
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .service-card {
+        margin: 15px 0;
+    }
+}
+@keyframes move{
+    0%{
+        background-position: 0;
+    }
+    60%{
+        background-position: 180px;
+    }
+    100%{
+        background-position: 440px;
+    }
+}
